@@ -7,28 +7,34 @@
         </ion-toolbar>
       </ion-header>
 
-      <ion-title class="titulo-principal">
-        Bienvenido [Nombre usuario]
-      </ion-title>
+  <div id="container">
+    
+    <ion-title>
+      Bienvenido
+    </ion-title>
 
-      <p></p>
-      <ion-button class="boton" id="present-alert-qr">Generar Qr</ion-button>
-      <ion-alert
-        trigger="present-alert-qr"
-        header="No funciona"
-        message="Este botón aún no funciona"
-        [buttons]="alertButtons"
-      ></ion-alert>
+    <ion-title class="sub-title">
+      [Nombre usuario]
+    </ion-title>
 
-      <p></p>
-
-      <ion-button class="boton" id="present-alert-code">Escanear código Qr</ion-button>
-      <ion-alert
-        trigger="present-alert-code"
-        header="No funciona"
-        message="Este botón aún no funciona"
-        [buttons]="alertButtons"
-      ></ion-alert>
-    </div>
+    
+    <p></p>
+    <ion-button id="present-alert-qr">Generar Qr</ion-button>
+    <ion-alert
+      trigger="present-alert-qr"
+      header="No funciona"
+      message="Este botón aún no funciona"
+      [buttons]="alertButtons"
+    ></ion-alert>
+    
+    <p></p>
+    
+    <ion-button id="present-alert-code">Ver código Qr</ion-button>
+    <ion-alert
+      trigger="present-alert-code"
+      header="No funciona"
+      message="Este botón aún no funciona"
+      [buttons]="alertButtons"
+    ></ion-alert>
   </div>
 </ion-content>

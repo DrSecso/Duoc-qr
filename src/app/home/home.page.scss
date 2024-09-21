@@ -1,15 +1,14 @@
 /* Fondo degradado de pantalla completa */
-#fondo-login {
+#fondo-home {
   background: linear-gradient(145deg, #8e9eff, #c9e4ff);
-  height: 100%;
+  height: 100vh; /* Asegura que ocupe toda la altura de la ventana */
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
 }
 
 /* Contenedor del formulario con estilo de tarjeta */
-#tarjeta-login {
+#tarjeta-home {
   background-color: #fff;
   border-radius: 20px;
   padding: 30px;
@@ -19,47 +18,42 @@
 }
 
 /* Estilo del título principal */
-.titulo-principal {
-  font-size: 1.4em;
+ion-title {
+  font-size: 1.6em;
   font-weight: bold;
   color: #5b6ac9;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
 }
 
-/* Botones */
-.boton {
-  border-radius: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #007BFF;
-  color: white;
+/* Estilo del subtítulo */
+.sub-title {
   font-size: 1.2em;
-  height: 50px;
+  color: #5b6ac9; /* Color para el subtítulo */
+  margin-bottom: 20px;
+}
+
+/* Estilo de los botones */
+ion-button {
+  --background: #007BFF; /* Color de fondo del botón */
+  --color: white; /* Color del texto */
+  border-radius: 40px; /* Bordes redondeados */
   width: 90%;
   max-width: 300px;
-  margin: 0 auto;
+  margin: 10px auto; /* Centrado */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   transition: background-color 0.3s, transform 0.3s;
-  cursor: pointer;
-  border: none;
-  text-transform: uppercase;
 }
 
-.boton:hover {
-  background-color: #0056b3;
+ion-button:hover {
+  --background: #0056b3; /* Color al pasar el ratón */
   transform: translateY(-2px);
 }
 
-.boton:active {
-  transform: translateY(1px);
+ion-button:active {
+  transform: translateY(1px); /* Efecto al hacer clic */
 }
 
-/* Enlace de olvidó contraseña */
-.olvido-contrasena {
-  display: block;
-  margin-top: 10px;
-  font-size: 0.9em;
-  color: #888;
-  text-align: center;
+/* Espaciado para los párrafos */
+p {
+  margin: 10px 0; /* Espacio arriba y abajo */
 }

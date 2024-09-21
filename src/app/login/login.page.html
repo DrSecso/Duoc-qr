@@ -1,0 +1,29 @@
+<ion-content>
+  <!-- Fondo degradado -->
+  <div id="fondo-login">
+    <div id="tarjeta-login" class="center-content">
+      <ion-title class="titulo-principal">Iniciar Sesión</ion-title>
+
+      <!-- Formulario -->
+      <form [formGroup]="formularioLogin" class="formulario-login">
+        <ion-item>
+          <ion-label position="floating">
+            <ion-icon name="person-outline"></ion-icon> Usuario
+          </ion-label>
+          <ion-input formControlName="usuario" maxlength="10" minlength="10"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="floating">
+            <ion-icon name="lock-closed-outline"></ion-icon> Contraseña
+          </ion-label>
+          <ion-input formControlName="contrasena" type="password" maxlength="10" minlength="10"></ion-input>
+        </ion-item>
+
+        <a href="#" class="olvido-contrasena">¿Olvidaste tu Contraseña?</a>
+        <p></p>
+        <ion-button class="boton">Iniciar Sesión</ion-button>
+      </form>
+    </div>
+  </div>
+</ion-content>

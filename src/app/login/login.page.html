@@ -8,21 +8,24 @@
       <form [formGroup]="formularioLogin" class="formulario-login">
         <ion-item>
           <ion-label position="floating">
-            <ion-icon name="person-outline"></ion-icon> Usuario
+            <ion-icon name="person-outline"></ion-icon> nombre
           </ion-label>
-          <ion-input formControlName="usuario" maxlength="10" minlength="10"></ion-input>
+          <ion-input formControlName="nombre"></ion-input>
         </ion-item>
 
         <ion-item>
           <ion-label position="floating">
             <ion-icon name="lock-closed-outline"></ion-icon> Contraseña
           </ion-label>
-          <ion-input formControlName="contrasena" type="password" maxlength="10" minlength="10"></ion-input>
+          <ion-input formControlName="password" type="password" ></ion-input>
         </ion-item>
 
         <a href="/restablecer" class="olvido-contrasena">¿Olvidaste tu Contraseña?</a>
         <p></p>
-        <ion-button href="/home" class="boton">Iniciar Sesión</ion-button>
+        <ion-button (click)="ingresar()">
+          ingresar
+        </ion-button>
+        <ion-button href="/registro" class="boton">Registro</ion-button>
       </form>
     </div>
   </div>

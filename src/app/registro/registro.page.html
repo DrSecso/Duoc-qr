@@ -15,6 +15,7 @@
     <ion-card-content>
       <form [formGroup]="formularioregistro" (keyup.enter)="guardar()">
         <ion-item>
+          <ion-button href="/login" class="boton">Volver</ion-button>
           <ion-label position="floating">nombre</ion-label>
           <ion-input formControlName="nombre"></ion-input>
         </ion-item>
